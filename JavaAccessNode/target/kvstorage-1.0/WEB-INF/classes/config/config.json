@@ -1,0 +1,6 @@
+{
+  "accessNodeName": "access_node",
+  "myip": "172.17.0.1",
+  "centralNodeIp": "172.17.0.2",
+  "cookie": "mycookie"
+}

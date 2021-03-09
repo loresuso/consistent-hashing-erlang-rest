@@ -1,0 +1,37 @@
+.mybutton:hover {
+	-fx-background-color: #ffd900;
+	-fx-border-color: #ffd900;
+	-fx-text-fill: black;
+}
+
+
+.close_button:hover {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+}
+
+
+
+.mybutton {
+	-fx-text-fill: white;
+}
+
+.mybutton_doit {
+	-fx-text-fill: white;
+}
+
+.mybutton_doit:hover {
+	-fx-background-color: #ffd900;
+	-fx-border-color: #ffd900;
+	-fx-text-fill: black;
+}
+
+.mybutton_doit2 {
+	-fx-text-fill: black;
+	-fx-border-color:  #252736;
+}
+
+.mybutton_doit2:hover {
+	-fx-background-color: #252736;
+	-fx-text-fill: white;
+}

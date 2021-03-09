@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Main-Class: Main
+Class-Path: jakarta.json-api-1.1.6.jar javafx-base-15.0.1.jar org.eclips
+ e.persistence.moxy-2.7.6.jar hk2-utils-2.6.1.jar jackson-core-2.11.1.ja
+ r javassist-3.25.0-GA.jar javafx-controls-15.0.1-win.jar aopalliance-re
+ packaged-2.6.1.jar jakarta.xml.bind-api-2.3.3.jar jackson-jaxrs-base-2.
+ 10.0.jar fontawesomefx-commons-9.1.2.jar jersey-common-2.33.jar osgi-re
+ source-locator-1.0.3.jar jfoenix-9.0.10.jar jersey-entity-filtering-2.3
+ 3.jar jersey-hk2-2.33.jar jersey-client-2.33.jar org.eclipse.persistenc
+ e.core-2.7.6.jar org.eclipse.persistence.asm-2.7.6.jar jakarta.annotati
+ on-api-1.3.5.jar jakarta.activation-api-1.2.2.jar javafx-graphics-15.0.
+ 1.jar jackson-annotations-2.11.1.jar hk2-api-2.6.1.jar jakarta.json-1.1
+ .6.jar jackson-module-jaxb-annotations-2.10.0.jar javafx-fxml-16-ea+6.j
+ ar hk2-locator-2.6.1.jar fontawesomefx-fontawesome-4.7.0-9.1.2.jar jaka
+ rta.inject-2.6.1.jar jackson-databind-2.11.1.jar jersey-media-moxy-2.33
+ .jar jackson-jaxrs-json-provider-2.10.0.jar javafx-graphics-15.0.1-win.
+ jar javafx-controls-15.0.1.jar jakarta.ws.rs-api-2.1.6.jar javafx-fxml-
+ 16-ea+6-win.jar javafx-base-15.0.1-win.jar
+

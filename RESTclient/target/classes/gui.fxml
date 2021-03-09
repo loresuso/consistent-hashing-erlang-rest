@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuiController">
+   <children>
+      <Pane fx:id="tray_pane" prefHeight="25.0" style="-fx-background-color: #ffd900;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="10.0" layoutY="4.0" text="Distributed Key-Value DB - Client" textFill="#252736" />
+            <FontAwesomeIconView accessibleRole="BUTTON" fill="indianred" glyphName="CLOSE" size="1.5em" text="" x="576.0" y="19.0" fx:id="xbutton" />
+         </children>
+      </Pane>
+      <Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #252736;" AnchorPane.topAnchor="25.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="400.0" prefWidth="153.0">
+                     <children>
+                        <VBox layoutX="27.0" layoutY="14.0" prefHeight="370.0" prefWidth="100.0" style="-fx-alignment: center;">
+                           <children>
+                              <FontAwesomeIconView fx:id="show_menu" accessibleRole="BUTTON" fill="WHITE" size="2em" translateX="-63.0" translateY="-17.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></FontAwesomeIconView>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="insert_button" minWidth="70.0" style="-fx-border-color: white;" styleClass="mybutton" stylesheets="@button.css" text="Insert" textAlignment="CENTER" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <Polygon id="insert_marker" fx:id="put_marker" fill="#ffd900" rotate="-90.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE">
+                                      <points>
+                                        <Double fx:value="-50.0" />
+                                        <Double fx:value="40.0" />
+                                        <Double fx:value="50.0" />
+                                        <Double fx:value="40.0" />
+                                        <Double fx:value="0.0" />
+                                        <Double fx:value="-60.0" />
+                                      </points>
+                                       <HBox.margin>
+                                          <Insets left="-20.0" />
+                                       </HBox.margin>
+                                    </Polygon>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="get_button" minWidth="70.0" style="-fx-border-color: white;" styleClass="mybutton" stylesheets="@button.css" text="Get" textAlignment="CENTER" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <Polygon id="retrieve_marker" fx:id="get_marker" fill="#ffd900" rotate="-90.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" visible="false">
+                                       <points>
+                                          <Double fx:value="-50.0" />
+                                          <Double fx:value="40.0" />
+                                          <Double fx:value="50.0" />
+                                          <Double fx:value="40.0" />
+                                          <Double fx:value="0.0" />
+                                          <Double fx:value="-60.0" />
+                                       </points>
+                                       <HBox.margin>
+                                          <Insets left="-20.0" />
+                                       </HBox.margin>
+                                    </Polygon>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="delete_button" minWidth="70.0" style="-fx-border-color: white;" styleClass="mybutton" stylesheets="@button.css" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <Polygon id="delete_marker" fx:id="del_marker" fill="#ffd900" rotate="-90.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" visible="false">
+                                       <points>
+                                          <Double fx:value="-50.0" />
+                                          <Double fx:value="40.0" />
+                                          <Double fx:value="50.0" />
+                                          <Double fx:value="40.0" />
+                                          <Double fx:value="0.0" />
+                                          <Double fx:value="-60.0" />
+                                       </points>
+                                       <HBox.margin>
+                                          <Insets left="-20.0" />
+                                       </HBox.margin>
+                                    </Polygon>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="400.0" minWidth="10.0" prefHeight="200.0" style="-fx-background-color: #ffd900;">
+                     <HBox.margin>
+                        <Insets left="156.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <Pane prefHeight="400.0" prefWidth="448.0" style="-fx-text-inner-color: red;" styleClass="mytext" stylesheets="@textfield.css">
+                     <children>
+                        <VBox id="vbox_insert" fx:id="vbox_put" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="421.0">
+                           <children>
+                              <Label text="Insert" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="17.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Key" textAlignment="CENTER" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="key_insert" focusColor="#ebca24" promptText="Type the key" styleClass="mytext" stylesheets="@textfield.css" unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <Label text="Value" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <JFXTextField fx:id="value_insert" focusColor="#ebca24" minWidth="250.0" prefWidth="0.0" promptText="Type the value" unFocusColor="WHITE" />
+                                    <HBox alignment="CENTER" maxHeight="30.0" prefHeight="29.0" prefWidth="151.0" translateY="-3.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="button_upload_file" accessibleRole="BUTTON" fill="WHITE" size="2em" text="">
+                                             <HBox.margin>
+                                                <Insets right="40.0" />
+                                             </HBox.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </FontAwesomeIconView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label text="Result" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="50.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="result_insert" editable="false" prefHeight="80.0" prefWidth="381.0" promptText="Here will be shown the result.." wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <JFXButton fx:id="do_it_insert" alignment="TOP_LEFT" style="-fx-border-color: #ffb200;" styleClass="mybutton_doit" stylesheets="@button.css" text="INSERT" textAlignment="CENTER" textFill="#ffb200">
+                                 <VBox.margin>
+                                    <Insets left="320.0" top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <VBox id="vbox_retrieve" fx:id="vbox_get" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="421.0" styleClass="vbox_retrieve" visible="false">
+                           <children>
+                              <Label text="Retrieve" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="17.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Key" textAlignment="CENTER" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="key_get" focusColor="#ebca24" prefWidth="300.0" promptText="Type the key" styleClass="mytext" stylesheets="@textfield.css" unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="61.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <Label text="Result" textFill="WHITE">
+                                 <padding>
+                                    <Insets top="50.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea fx:id="result_get" editable="false" prefHeight="80.0" prefWidth="381.0" promptText="Here will be shown the result.." wrapText="true">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </TextArea>
+                                    <FontAwesomeIconView fx:id="button_save_file" accessibleRole="BUTTON" fill="WHITE" size="2em">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets right="20.0" top="20.0" />
+                                       </HBox.margin>
+                                    </FontAwesomeIconView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <JFXButton fx:id="do_it_get" alignment="TOP_LEFT" style="-fx-border-color: #ffb200;" styleClass="mybutton_doit" stylesheets="@button.css" text="GET" textAlignment="CENTER" textFill="#ffb200">
+                                 <VBox.margin>
+                                    <Insets left="320.0" top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <VBox id="vbox_delete" fx:id="vbox_del" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="421.0" styleClass="vbox_delete" visible="false">
+                           <children>
+                              <Label text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="17.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Key" textAlignment="CENTER" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="key_delete" focusColor="#ebca24" promptText="Type the key" styleClass="mytext" stylesheets="@textfield.css" unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <Label text="Result" textFill="WHITE">
+                                 <padding>
+                                    <Insets top="50.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="result_delete" editable="false" prefHeight="80.0" prefWidth="381.0" promptText="Here will be shown the result.." wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="50.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <JFXButton fx:id="do_it_delete" alignment="TOP_LEFT" style="-fx-border-color: #ffb200;" styleClass="mybutton_doit" stylesheets="@button.css" text="DELETE" textAlignment="CENTER" textFill="#ffb200">
+                                 <VBox.margin>
+                                    <Insets left="320.0" top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="config_menu" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #ffd900;" visible="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <FontAwesomeIconView fx:id="show_menu1" accessibleRole="BUTTON" fill="WHITE" size="2em" translateX="37.0" translateY="39.0" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <Label fx:id="label_config" layoutX="110.0" layoutY="62.0" text="REST server url" visible="false" />
+            <JFXTextField fx:id="url_textfield" focusColor="BLACK" layoutX="110.0" layoutY="86.0" prefHeight="25.0" prefWidth="376.0" styleClass="mytext2" stylesheets="@textfield.css" unFocusColor="BLACK" visible="false" />
+            <JFXButton fx:id="change_url_button" layoutX="325.0" layoutY="150.0" styleClass="mybutton_doit2" stylesheets="@button.css" text="CHANGE REST SERVER URL" visible="false" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+</AnchorPane>
