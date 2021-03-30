@@ -4,6 +4,6 @@
 
 **University of Pisa, February 2021**
  
- _Computer Engineering - Cloud Computing_
+ _Computer Engineering - Distributed Systems and Middleware Technologies_
 
   Lorenzo Susini, Federico Cappellini, Andrea Lelli, Alberto Lunghi
